@@ -1,5 +1,5 @@
 {% set name = "amazon-sagemaker-sql-execution" %}
-{% set version = "0.0.1" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/amazon-sagemaker-sql-execution-{{ version }}.tar.gz
-  sha256: 08b8e6be09f6ecaad326ec3dc5c581d4497a57b986ca0aafcf779250bec3da80
+  sha256: 91cf61c97adddef944b02f3d4deca4215b0f9db1195fc487901e00403aac62aa
 
 build:
   noarch: python
@@ -17,10 +17,16 @@ build:
 requirements:
   host:
     - python >=3.8
-    - setuptools
+    - setuptools >=61
+    - wheel
     - pip
   run:
     - python >=3.8
+    - boto3 >=1.28.64
+    - pyathena >=3.3.0,<4
+    - snowflake-connector-python >=3.7.0,<4.0
+    - redshift_connector >=2.1.0,<3
+    - aws-embedded-metrics >=3.2.0,<4
 
 test:
   imports:
