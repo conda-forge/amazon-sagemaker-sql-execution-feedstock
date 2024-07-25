@@ -1,4 +1,4 @@
-{% set name = "amazon-sagemaker-sql-execution" %}
+{% set name = "amazon_sagemaker_sql_execution" %}
 {% set version = "0.1.6" %}
 
 package:
