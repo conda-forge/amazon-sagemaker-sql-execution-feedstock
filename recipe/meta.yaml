@@ -1,5 +1,5 @@
 {% set name = "amazon-sagemaker-sql-execution" %}
-{% set version = "0.1.6" %}
+{% set version = "0.1.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 66d7f48081c72fdd0f0e111693dbf7447e662a24e588a21b481dcb45358458c2
+  sha256: f6fee23b982c707fb143bcb13a1cad858856f1035543f53909c329b1c82aacfb
 
 build:
   noarch: python
