@@ -1,5 +1,5 @@
 {% set name = "amazon-sagemaker-sql-execution" %}
-{% set version = "0.1.7" %}
+{% set version = "0.1.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: f6fee23b982c707fb143bcb13a1cad858856f1035543f53909c329b1c82aacfb
+  sha256: dd0e466dddf7f05a0329307961e779d7f2dfde5d04c7e6623ceb61f9779143a1
 
 build:
   noarch: python
@@ -23,10 +23,12 @@ requirements:
   run:
     - python >=3.8
     - boto3 >=1.28.64
+    - aiobotocore >=2.7.0
     - pyathena >=3.3.0,<4
     - redshift_connector >=2.1.0,<3
     - aws-embedded-metrics >=3.2.0,<4
     - snowflake-connector-python >=3.8.1,<4.0
+    - sagemaker-jupyterlab-extension-common >=0.2.1,<1
     - cryptography >=42.0.0
 
 test:
