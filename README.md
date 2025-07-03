@@ -146,8 +146,6 @@ Feedstock Maintainers
 * [@HariniNarayanan](https://github.com/HariniNarayanan/)
 * [@gogakoreli](https://github.com/gogakoreli/)
 * [@kumarnzt](https://github.com/kumarnzt/)
+* [@meghanajs99](https://github.com/meghanajs99/)
 * [@varun196](https://github.com/varun196/)
-
-
-<!-- dummy commit to enable rerendering -->
 
